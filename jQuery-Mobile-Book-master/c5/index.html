@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>The Camden Hotel</title>
+<title>Camden Hotel</title>
 <meta name="viewport" 
       content="width=device-width, initial-scale=1">	
 <link rel="stylesheet" 
@@ -12,43 +12,43 @@
 <script type="text/javascript" 
         src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js">
 </script>
-<style>
-	
-	h1, h4   {color: blue;}
-	p    {color: red;}
-	</style>
 </head>
 
 <body>
 
-<div data-role="page">
+<div data-role="page" id="third">
 
-	<div data-role="header">
-		<h1>Camden Hotel</h1>
+	<div >
+		<h1>Contact Page</h1>
 	</div>
-	
 	
 	<div role="main" class="ui-content">
 
-		<p >
-			Welcome to the Camden Hotel. We are luxury hotel specializing in catering to the rich and overly privileged. 
-			You will find our accommodations both flattering to your ego as well as damaging to your wallet. Enjoy our 
-			complimentary wi-fi access as well as caviar baths while sleeping in beds with gold thread.
-		</p>
-
-		<ul data-role="listview" data-inset="true">
-		<li><a href="find.html"  data-ajax="false">Find Us</a></li>
-		<li><a href="rooms.html"  data-ajax="false">Our Rooms</a></li>
-		<li><a href="contact.html"  data-ajax="false">Contact Us</a></li>
-		<li><a href="nonMobile.htm" data-ajax="false" >Non-Mobile Site</a></li>
+		<ul id="theList" data-role="listview" data-inset="true">
+			<li>Name</li>
+			<li>Address</li>
 		</ul>
+		
+		<form>
+		<div data-role="fieldcontain">
+		    <label for="additem">New Name</label>
+		    <input type="text" name="additem" id="additem" value=""  />
+		</div>	
+		<input type="button" id="testBtn" value="Add It">
+		</form>
 	</div>
-
-	<div data-role="footer">
+    <div data-role="footer">
 		<h4>&copy; Camden Hotel 2016</h4>
 	</div>
-		
 </div>
+
+<script>
+$("#testBtn").click(function() {
+	var itemToAdd = $.trim($("#additem").val());
+	if(itemToAdd == "") return;
+	$("#theList").append("<li>"+itemToAdd+"</li>");
+});
+</script>
 
 </body>
 </html>
