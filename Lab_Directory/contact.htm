@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        This is contact page title of the file is contact.htm
+    -->
+<title>Moving Planner Application</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--
+        "themes/VivekGupta.min.css" is the css generated from themeRoller
+    -->
+<link rel="stylesheet" href="themes/VivekGupta.min.css" />
+	  <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+		
+</script>
+</head>
+
+<body>
+
+<div data-role="page">
+
+	<div >
+		<h1>Contact Page</h1>
+		<div data-role="navbar">
+		<ul>
+            <li><a href="contact.htm" data-ajax="false" class="ui-btn-active">Contact</a></li>
+			<li><a href="index.htm" data-ajax="false">Home</a></li>	
+		</ul>		
+		</div>
+	</div>
+	<div role="main" class="ui-content">
+		
+		<a href="#firstPopup" data-role="button" data-rel="popup">Submission Instruction</a>
+
+	</div>
+<!--
+        data-role="popup" provide the popup icon in the contact form
+    -->
+	<div data-role="popup" id="firstPopup">
+    <p>Please fill all column before final form submission.</p>
+	</div>
+
+
+	<div data-role="panel" data-position="right" id="rightPanel">
+		Click the send button for final submission.
+
+		<p>
+			<a data-role="button" data-rel="close">Close</a>
+		</p>
+
+	</div>
+		<form action="echo.html" method="post">
+			
+			<div class="ui-field-contain">
+				<label for="name">Name:</label>
+				<input type="text" name="name" id="name" value=""  />
+			</div>	
+	
+			<div class="ui-field-contain">
+				<label for="email">Email:</label>
+				<input type="text" name="email" id="email" value=""  />
+			</div>	
+	
+			<div class="ui-field-contain">
+				<label for="bio">Message:</label>
+				<textarea name="bio" id="bio"></textarea>
+			</div>	
+	
+			<div class="ui-field-contain">
+				<input type="submit" name="submit" value="Send"  />
+			</div>	
+			
+			</form>
+	</div>
+
+	<div data-role="footer">
+		<div data-role="navbar">
+			<ul>
+			<li><a href="index.htm" data-ajax="false">Home</a></li>
+			<li><a href="contact.htm" data-ajax="false"> Contact </a></li>
+			</ul>
+		</div>
+	</div>
+	
+</div>
+

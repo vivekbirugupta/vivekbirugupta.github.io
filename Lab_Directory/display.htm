@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        This is display page title of the file is display.htm
+    -->
+<title>Moving Planner Application</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--
+        "themes/VivekGupta.min.css" is the css generated from themeRoller
+    -->
+<link rel="stylesheet" href="themes/VivekGupta.min.css" />
+	  <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+</head>
+
+<body>
+
+<div data-role="page">
+
+	<div data-role="header">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="index.htm" data-ajax="false" >Home</a></li>
+				<li><a href="add.htm"data-ajax="false" >Add Items</a></li>
+			</ul>
+		</div>
+	</div>
+	<h2>
+		Moving Items Display List
+		   </h2>
+
+		   <div role="main" class="ui-content">
+		<!--
+			data-icon="delete" provide the delete icon in the display from
+		-->
+			<a href="#firstPopup" data-role="button" data-rel="popup" data-icon="delete">Packaging Box</a>
+			<a href="#firstPopup" data-role="button" data-rel="popup" data-icon="delete">Packaging Tape</a>
+			<a href="#firstPopup" data-role="button" data-rel="popup" data-icon="delete">Large Envelpo</a>
+			<a href="#firstPopup" data-role="button" data-rel="popup" data-icon="delete"> Moving Trolly</a>
+
+	
+		</div>
+	<!--
+			data-role="popup" provide the popup icon in the contact form
+		-->
+		<div data-role="popup" id="firstPopup" >
+		<p>  These items are required for the moving .</p>
+		</div>
+
+</ul>
+<div data-role="footer">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="contact.htm" data-ajax="false" >Contact Us</a></li>
+				
+			</ul>
+		</div>
+	</div>
+
+
