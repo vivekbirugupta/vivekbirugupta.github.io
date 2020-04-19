@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Name of Mobile apps: Bird of Paradise Guided Tour
+	Name of developer: Vivek Gupta
+	Date of Publication: 05/05/2020
+	Descripionof the apps: This is the main page of the bird of paradise guded tour mobile apps,
+	it has eight pages in a single file; name of eight pages are homePage, aboutPage, mapPage, videoPage,
+	islandPage, birdPage, registerPage and contact Page.
+-->
+
+<title>Bird of Paradise</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="themes/finalProjectM.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<style>
+
+</style>
+</head>
+
+<body>
+<!-- Page-1
+	This is Home page section of Bird of Paradise, title of this page is Home
+-->
+<div data-role="page" id="homePage" >
+<!-- this code is header nav bar section, data-prefetch="true", data-transition="slide", added
+-->
+
+	<div data-role="header">
+		<h1>Home</h1>
+		<div data-role="navbar">
+		<ul>
+			<li><a href="#" class="ui-btn-active" data-icon="home">Home</a></li>
+			<li><a href="#aboutPage" data-transition="slide" data-prefetch="true" data-icon="info">ABOUT</a></li>
+			<li><a href="#mapPage"  data-transition="slide" data-prefetch="true" data-icon="location" >MAP</a></li>
+		</ul>		
+		</div>
+	</div>
+	
+	<div data-role="content">
+	<h3>
+		Welcome to the Bird of Paradise
+  </h3>
+  <img src="image/home.png" title="Home Image">
+	</div>
+<!-- this code is footer nav bar section, data-prefetch="true", data-transition="slide" added
+
+-->
+	<div data-role="footer">
+		<div data-role="navbar">
+			<ul>
+			<li><a href="#videoPage" data-transition="slide" data-prefetch="true" data-icon="camera" >VIEW</a></li>
+			<li><a href="#registerPage" data-transition="slide" data-prefetch="true" data-icon="mail" >REGISTER</a></li>
+			<li><a href="#contactPage" data-transition="slide" data-prefetch="true" data-icon="phone">CONTACT</a></li>
+			</ul>
+		</div>
+	</div>
+	
+</div>
+
+<!-- Page-2
+	This is about page of Bird of Paradise, title of the page is about the bird of paradise
+-->
+<div data-role="page" id="aboutPage" >
+	<!-- this code is header nav bar section, data-prefetch="true", data-transition="slide" added
+-->
+	<div data-role="header">
+		<h1>About Bird of Paradise</h1>
+		<div data-role="navbar">
+		<ul>
+			<li><a href="#homePage" data-transition="slide"  data-prefetch="true" data-icon="home">Home</a></li>
+			<li><a href="#" class="ui-btn-active" data-icon="info">ABOUT</a></li>
+			<li><a href="#mapPage" data-transition="slide" data-prefetch="true" data-icon="location" >MAP</a></li>
+		</ul>		
+		</div>
+	</div>
+	
+	<div data-role="content">
+	
+  <img src="image/about1.png" title="Home Image">
+
+  <p>
+	The birds-of-paradise are members of the family Paradisaeidae of the order Passeriformes. 
+    The majority of species are found in New Guinea and eastern Australia. The family has 42 species in 15 genera.
+   source: Gill, F & D Donsker (Eds). 2012. 
+  </p>
+	</div>
+<!-- this code is footer nav bar section, data-prefetch="true", data-transition="slide" added
+-->
+	<div data-role="footer">
+		<div data-role="navbar">
+			<ul>
+			<li><a href="#videoPage" data-transition="slide" data-prefetch="true" data-icon="camera" >VIEW</a></li>
+			<li><a href="#registerPage" data-transition="slide" data-prefetch="true" data-icon="mail" >REGISTER</a></li>
+			<li><a href="#contactPage" data-transition="slide" data-prefetch="true" data-icon="phone">CONTACT</a></li>
+			</ul>
+		</div>
+	</div>
+	
+</div>
+
+<!-- Page-3
+	This is map page of Bird of Paradise, title of the page if geo-location
+-->
+<div data-role="page"id="mapPage" >
+<!-- this code is header nav bar section, data-prefetch="true", data-transition="slide" added
+-->
+	<div data-role="header">
+		<h1>Geo-Location</h1>
+		<div data-role="navbar">
+		<ul>
+			<li><a href="#homePage"  data-transition="slide" data-prefetch="true" data-icon="home">Home</a></li>
+			<li><a href="#aboutPage" data-transition="slide" data-prefetch="true" data-icon="info">ABOUT</a></li>
+			<li><a href="#" class="ui-btn-active" data-icon="location" >MAP</a></li>
+		</ul>		
+		</div>
+	</div>
+	
+	<div data-role="content">
+	
+  <img src="image/map3.png" title="Home Image">
+
+  <p>
+	The centre of bird-of-paradise diversity is the large island of New Guinea; all but two genera are found in New Guinea. 
+The two that are not are the monotypic genera Lycocorax and Semioptera, both of which are endemic to the Maluku Islands, to the west of New Guinea.
+The majority of birds-of-paradise live in tropical forests, including rainforest, swamps and moss forest.
+Source: Firth, Clifford B.; Firth, Dawn W. (2009).  
+  </p>
+	</div>
+<!-- this code is footer nav bar section, data-prefetch="true", data-transition="slide" added
+-->
+	<div data-role="footer">
+		<div data-role="navbar">
+			<ul>
+			<li><a href="#videoPage" data-transition="slide" data-prefetch="true" data-icon="camera" >VIEW</a></li>
+			<li><a href="#registerPage" data-transition="slide" data-prefetch="true" data-icon="mail" >REGISTER</a></li>
+			<li><a href="#contactPage" data-transition="slide" data-prefetch="true" data-icon="phone">CONTACT</a></li>
+			</ul>
+		</div>
+	</div>
+	
+</div>
+
+<!-- Page-4
+	This is Video page s of Bird of Paradise, title of the page is video of bird of paradise
+-->
+<div data-role="page" id="videoPage" >
+<!-- this code is header nav bar section, data-prefetch="true",  data-transition="slide"added
+-->
+	<div data-role="header">
+		<h1>Video of Bird of Paradise</h1>
+		<div data-role="navbar">
+		<ul>
+			<li><a href="#homePage" data-transition="slide" data-prefetch="true" data-icon="home">Home</a></li>
+			<li><a href="#aboutPage"  data-transition="slide" data-prefetch="true" data-icon="info">ABOUT</a></li>
+			<li><a href="#mapPage" data-transition="slide" data-prefetch="true" data-icon="location" >MAP</a></li>
+		</ul>		
+		</div>
+	</div>
+	
+	<div data-role="content">
+		<h3>
+			Behavioural Video Bird of Paradise
+		</h3>
+	
+		<video width="320" height="340" controls>
+			<source src="image/video.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		  </video>
+
+  <p>
+	
+Narrated by Emmy Award-winner Stephen Fry, Dancing With The Birds visits everyone’s favorite birds-of-paradise 
+and their spectacularly captivating mating rituals from flash dancing to shape shifting.
+ Dancing With The Birds launches on Netflix October 23rd.
+Source: Dancing With The Birds | Official Trailer | Netflix  
+  </p>
+	</div>
+<!-- this code is footer nav bar section, data-prefetch="true", data-transition="slide" added
+-->
+	<div data-role="footer">
+		<div data-role="navbar">
+			<ul>
+			<li><a href="#"class="ui-btn-active"  data-icon="video" >VIDEO</a></li>
+			<li><a href="#islandPage" data-transition="slide" data-prefetch="true"  data-icon="camera" >ISLAND</a></li>
+			<li><a href="#birdPage" data-transition="slide" data-prefetch="true"  data-icon="eye">BIRDS</a></li>
+			</ul>
+		</div>
+	</div>
+
+	
+</div>
+
+
+<!-- Page-5
+	This is Island page of Bird of Paradise, title of the page is bird of paradise island
+-->
+<div data-role="page" id="islandPage" >
+<!-- this code is header nav bar section, data-prefetch="true",  data-transition="slide"added
+-->
+	<div data-role="header">
+		<h1> Bird of Paradise Island</h1>
+		<div data-role="navbar">
+		<ul>
+			<li><a href="#homePage" data-transition="slide" data-prefetch="true" data-icon="home">Home</a></li>
+			<li><a href="#aboutPage" data-transition="slide" data-prefetch="true" data-icon="info">ABOUT</a></li>
+			<li><a href="#mapPage" data-transition="slide"  data-prefetch="true" data-icon="location" >MAP</a></li>
+		</ul>		
+		</div>
+	</div>
+	
+	<div data-role="content">
+		<h2>
+			 Bird of Paradise Island 
+		</h2>
+	
+		<img src="image/island.png" title="Home Image" >
+
+  <p>
+	
+	Speciation is the process by which a single species divides into two. A critical ingredient for speciation is isolation.
+	Without it, species can adapt to new conditions, but they can’t divide into new species. 
+	he complex geology of New Guinea has provided the birds-of-paradise with lots of isolating events over the last 20 million years. 
+	Combined with intense sexual selection, this has led to the stunning diversity of species we see today. 
+	Source: Bird of Paradise Project
+  </p>
+	</div>
+<!-- this code is footer nav bar section, data-prefetch="true", data-transition="slide"  added
+-->
+	<div data-role="footer">
+		<div data-role="navbar">
+			<ul>
+			<li><a href="#videoPage" data-transition="slide" data-prefetch="true" data-icon="video" >VIDEO</a></li>
+			<li><a href="#" class="ui-btn-active" data-icon="camera" >ISLAND</a></li>
+			<li><a href="#birdPage" data-transition="slide" data-prefetch="true" data-icon="eye">BIRDS</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!-- Page-6
+	This is Birds page of Bird of , title of the this page is taxonomy
+--> 
+<div data-role="page" id="birdPage" >
+<!-- this code is header nav bar section, data-prefetch="true", data-transition="slide" added
+-->
+	<div data-role="header">
+		<h1> Taxonomy</h1>
+		<div data-role="navbar">
+		<ul>
+			<li><a href="#homePage" data-transition="slide" data-prefetch="true" data-icon="home">Home</a></li>
+			<li><a href="#aboutPage" data-transition="slide"  data-prefetch="true" data-icon="info">ABOUT</a></li>
+			<li><a href="#mapPage" data-transition="slide" data-prefetch="true" data-icon="location" >MAP</a></li>
+		</ul>		
+		</div>
+	</div>
+	
+	<div data-role="content">
+		<h3>
+			Taxonomy Bird of Paradise 
+		</h3>
+	
+		<img src="image/birds.png" title="Home Image" >
+
+  <p>
+	
+	To understand bird–of–paradise evolution, biologists have organized closely related species into 15 groups each called a genus plural: genera. 
+	Some of the genera have several species that look pretty similar. Other genera contain just a single unusual species. Look inside each genus and see how taxonomy helps make sense of biological diversity. 
+	Source: Bird of Paradise Project
+  </p>
+	</div>
+<!-- this code is footer nav bar section, data-prefetch="true", data-transition="slide" added
+-->
+	<div data-role="footer">
+		<div data-role="navbar">
+			<ul>
+			<li><a href="#videoPage" data-transition="slide" data-prefetch="true" data-icon="video" >VIDEO</a></li>
+			<li><a href="#islandPage"data-transition="slide" data-prefetch="true" data-icon="camera" >ISLAND</a></li>
+			<li><a href="#" class="ui-btn-active" data-icon="eye">BIRDS</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Page-8
+	This is contact page of Bird of Paradise, title of the page is contact us
+-->
+<div data-role="page" id="contactPage" >
+<!-- this code is header nav bar section, data-prefetch="true", data-transition="slide" added
+-->
+	<div data-role="header">
+		<h1>Contact Us:</h1>
+		<div data-role="navbar">
+		<ul>
+			<li><a href="#homePage" data-transition="slide" data-prefetch="true" data-icon="home">Home</a></li>
+			<li><a href="#aboutPage" data-transition="slide" data-prefetch="true" data-icon="info">ABOUT</a></li>
+			<li><a href="#mapPage"  data-transition="slide" data-prefetch="true" data-icon="location" >MAP</a></li>
+		</ul>		
+		</div>
+	</div>
+	
+	<div data-role="content">
+		
+	
+		<img src="image/contact.png" title="Home Image" >
+		<h3>
+			Contact Us for any inquiry:
+			
+		</h3>
+		<ul>
+			<li>email: gupta.gmail.com</li>
+			<li>Phone: 215-384-2548</li>
+			<li>Mailing Address:
+			2520 North Avenue
+			Maple Park IL 60146</li>
+		</ul>
+		<a href="https://www.facebook.com/cornellbirds">Follow us on FaceBook</a> 
+		<img src="image/face.png" title="facebook" width="50" height="50"  >
+		<br>
+		<a href="https://www.youtube.com/LabofOrnithology">Subscribe YouTube Channel</a> 
+		<img src="image/you.png" title="facebook" width="50" height="50" >
+
+	</div>
+<!-- this code is footer nav bar section, data-prefetch="true", data-transition="slide" added
+-->
+	<div data-role="footer">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#videoPage" data-transition="slide" data-prefetch="true" data-icon="camera" >VIEW</a></li>
+				<li><a href="#registerPage"data-transition="slide" data-prefetch="true" data-icon="mail" >REGISTER</a></li>
+				<li><a href="#" class="ui-btn-active"  data-icon="phone">CONTACT</a></li>
+			</ul>
+		</div>
+	</div>
+
+</div>
+
+
+<!-- Page-7
+	This is register page of Bird of Paradise, title of this page is registration
+-->
+<div data-role="page" id="registerPage" >
+<!-- this code is header nav bar section, data-prefetch="true", data-transition="slide" added
+-->
+	<div data-role="header">
+		<h1>Registration</h1>
+		<div data-role="navbar">
+		<ul>
+			<li><a href="#homePage" data-transition="slide" data-prefetch="true" data-icon="home">Home</a></li>
+			<li><a href="#aboutPage" data-transition="slide" data-prefetch="true" data-icon="info">ABOUT</a></li>
+			<li><a href="#mapPage" data-transition="slide" data-prefetch="true" data-icon="location" >MAP</a></li>
+		</ul>		
+		</div>
+	</div>
+	
+	<div data-role="content">
+		
+	
+		<img src="image/flower.png" title="Home Image" >
+		<h3>
+			Register for Guided Tour 
+		</h3>
+  <div role="main" class="ui-content">
+		<form>
+			<div class="ui-field-contain">
+				<label for="name">First & Last Name:</label>
+				<input id="title" type="text" placeholder="Your Name" />
+			</div>
+			<div>
+				<label for="date">Date of Booking:</label>
+				<input type="date" id="date" placeholder="yyyy-mm-dd" required>
+			</div>
+			<div class="ui-field-contain">
+				<label for="contact">Contact & email:</label>
+				<textarea id="note" placeholder="Contact Addres">
+				</textarea>
+			</div>
+			<div class="ui-grid-a">
+				
+				<div class="ui-block-b">
+					
+					<input id="btnAddNote" type="button" value="Submit" data-icon="check" />
+				</div>
+			</div>
+		</form>
+
+		<ul id="notesList" data-role="listview" data-inset="true"></ul>
+	</div>
+
+	</div>
+<!-- this code is footer nav bar section, data-prefetch="true", data-transition="slide" added
+-->
+	<div data-role="footer">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#videoPage" data-transition="slide" data-prefetch="true" data-icon="camera" >VIEW</a></li>
+				<li><a href="#"class="ui-btn-active"  data-icon="mail" >REGISTER</a></li>
+				<li><a href="#contactPage" data-transition="slide" data-prefetch="true" data-icon="phone">CONTACT</a></li>
+			</ul>
+		</div>
+	</div>
+
+</div>
+
+</body>
+</html>
+
