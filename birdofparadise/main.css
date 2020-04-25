@@ -1,0 +1,30 @@
+body, html {
+  height: 92%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("image/BoP.png");
+
+  /* Full height */
+  height: 92%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dg {
+  /* The image used */
+  background-image: url("image/map.png");
+
+  /* Full height */
+  height: 92%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
