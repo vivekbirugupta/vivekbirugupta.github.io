@@ -11,15 +11,37 @@
 
 <title>Bird of Paradise</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="themes/finalProjectM.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="themes/FinalTheme.min.css" />
 <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
 <style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
 
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
 </style>
 </head>
 
@@ -28,40 +50,55 @@
 	This is Home page section of Bird of Paradise, title of this page is Home
 -->
 <div data-role="page" id="homePage" >
-<!-- this code is header nav bar section, data-prefetch="true", data-transition="slide", added
--->
-
-	<div data-role="header">
-		<h1>Home</h1>
-		<div data-role="navbar">
-		<ul>
-			<li><a href="#" class="ui-btn-active" data-icon="home">Home</a></li>
-			<li><a href="#aboutPage" data-transition="slide" data-prefetch="true" data-icon="info">ABOUT</a></li>
-			<li><a href="#mapPage"  data-transition="slide" data-prefetch="true" data-icon="location" >MAP</a></li>
-		</ul>		
-		</div>
-	</div>
+	<!-- this code is header nav bar section, data-prefetch="true", data-transition="slide", added
+	-->
 	
-	<div data-role="content">
-	<h3>
-		Welcome to the Bird of Paradise
-  </h3>
-  <img src="image/home.png" title="Home Image">
-	</div>
-<!-- this code is footer nav bar section, data-prefetch="true", data-transition="slide" added
-
--->
-	<div data-role="footer">
-		<div data-role="navbar">
+		<div data-role="header">
+			<h1>Home</h1>
+			<div data-role="navbar">
 			<ul>
-			<li><a href="#videoPage" data-transition="slide" data-prefetch="true" data-icon="camera" >VIEW</a></li>
-			<li><a href="#registerPage" data-transition="slide" data-prefetch="true" data-icon="mail" >REGISTER</a></li>
-			<li><a href="#contactPage" data-transition="slide" data-prefetch="true" data-icon="phone">CONTACT</a></li>
-			</ul>
+				<li><a href="#" class="ui-btn-active" data-icon="home">Home</a></li>
+				<li><a href="#aboutPage" data-transition="slide" data-prefetch="true" data-icon="info">ABOUT</a></li>
+				<li><a href="#mapPage"  data-transition="slide" data-prefetch="true" data-icon="location" >MAP</a></li>
+			</ul>		
+			</div>
 		</div>
+		<!-- this code used for poup widget
+	-->
+		<div data-role="content">
+		<h3>
+			Welcome to the Bird of Paradise
+	  </h3>
+	  <img src="image/home.png" title="Home Image" height="400" width="325" >
+		</div>
+
+
+		<div role="main" class="ui-content">
+			<a href="#firstPopup" data-role="button"
+		data-rel="popup">Click here to know more about this Mobile web Apps</a>
+	</div>
+	<div data-role="popup" id="firstPopup">
+	
+	<h3>This is Bird of Paradise Mobile Web Apps for nature lovers. 
+		you can see the site and book here for guided tour of Bird of Paradise.</h3>
+	
+	</div>
+
+	<!-- this code is footer nav bar section, data-prefetch="true", data-transition="slide" added
+	
+	-->
+		<div data-role="footer">
+			<div data-role="navbar">
+				<ul>
+				<li><a href="#videoPage" data-transition="slide" data-prefetch="true" data-icon="camera" >VIEW</a></li>
+				<li><a href="#registerPage" data-transition="slide" data-prefetch="true" data-icon="mail" >REGISTER</a></li>
+				<li><a href="#contactPage" data-transition="slide" data-prefetch="true" data-icon="phone">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+		
 	</div>
 	
-</div>
 
 <!-- Page-2
 	This is about page of Bird of Paradise, title of the page is about the bird of paradise
@@ -75,21 +112,46 @@
 		<ul>
 			<li><a href="#homePage" data-transition="slide"  data-prefetch="true" data-icon="home">Home</a></li>
 			<li><a href="#" class="ui-btn-active" data-icon="info">ABOUT</a></li>
-			<li><a href="#mapPage" data-transition="slide" data-prefetch="true" data-icon="location" >MAP</a></li>
+			<li><a href="#mapPage" data-ajax="false" data-transition="slide" data-prefetch="true" data-icon="location" >MAP</a></li>
 		</ul>		
 		</div>
 	</div>
 	
 	<div data-role="content">
-	
-  <img src="image/about1.png" title="Home Image">
+			<!-- this code used for grid widget
+	-->
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			<p>
+			<img src="image/about.png" height="250" width="150" >
+			</p>
+			</div>
+			<div class="ui-block-b">
+			<p>
+			The birds-of-paradise are members of the family Paradisaeidae of the order Passeriformes. 
+		The majority of species are found in New Guinea and eastern Australia. The family has 42 species in 15 genera.
+	   source: Gill, F & D Donsker (Eds). 2012.
+			</p>
+			</div>
+			<div class="ui-block-a">
+			<p>
+			The bird of paradise gets its name from the fact that its flower is made of three bright orange petals and 
+	three blue petals which are fused together into a single bud. source: Gill, F & D Donsker (Eds). 2012.
+			</p>
+			</div>
+			<div class="ui-block-b">
+			<p>
+			<img src="image/about1.png" height="250" width="150" >
+			</p>
+			</div>
+			
+		</div>
+		
 
-  <p>
-	The birds-of-paradise are members of the family Paradisaeidae of the order Passeriformes. 
-    The majority of species are found in New Guinea and eastern Australia. The family has 42 species in 15 genera.
-   source: Gill, F & D Donsker (Eds). 2012. 
-  </p>
 	</div>
+
+		
+
 <!-- this code is footer nav bar section, data-prefetch="true", data-transition="slide" added
 -->
 	<div data-role="footer">
@@ -108,44 +170,64 @@
 	This is map page of Bird of Paradise, title of the page if geo-location
 -->
 <div data-role="page"id="mapPage" >
-<!-- this code is header nav bar section, data-prefetch="true", data-transition="slide" added
--->
-	<div data-role="header">
-		<h1>Geo-Location</h1>
-		<div data-role="navbar">
-		<ul>
-			<li><a href="#homePage"  data-transition="slide" data-prefetch="true" data-icon="home">Home</a></li>
-			<li><a href="#aboutPage" data-transition="slide" data-prefetch="true" data-icon="info">ABOUT</a></li>
-			<li><a href="#" class="ui-btn-active" data-icon="location" >MAP</a></li>
-		</ul>		
-		</div>
-	</div>
-	
-	<div data-role="content">
-	
-  <img src="image/map3.png" title="Home Image">
-
-  <p>
-	The centre of bird-of-paradise diversity is the large island of New Guinea; all but two genera are found in New Guinea. 
-The two that are not are the monotypic genera Lycocorax and Semioptera, both of which are endemic to the Maluku Islands, to the west of New Guinea.
-The majority of birds-of-paradise live in tropical forests, including rainforest, swamps and moss forest.
-Source: Firth, Clifford B.; Firth, Dawn W. (2009).  
-  </p>
-	</div>
-<!-- this code is footer nav bar section, data-prefetch="true", data-transition="slide" added
--->
-	<div data-role="footer">
-		<div data-role="navbar">
+	<!-- this code is header nav bar section, data-prefetch="true", data-transition="slide" added
+	-->
+		<div data-role="header">
+			<h1>Geo-Location</h1>
+			<div data-role="navbar">
 			<ul>
-			<li><a href="#videoPage" data-transition="slide" data-prefetch="true" data-icon="camera" >VIEW</a></li>
-			<li><a href="#registerPage" data-transition="slide" data-prefetch="true" data-icon="mail" >REGISTER</a></li>
-			<li><a href="#contactPage" data-transition="slide" data-prefetch="true" data-icon="phone">CONTACT</a></li>
-			</ul>
+				<li><a href="#homePage"  data-transition="slide" data-prefetch="true" data-icon="home">Home</a></li>
+				<li><a href="#aboutPage" data-transition="slide" data-prefetch="true" data-icon="info">ABOUT</a></li>
+				<li><a href="#" class="ui-btn-active" data-icon="location" >MAP</a></li>
+			</ul>		
+			</div>
 		</div>
+		
+		<div data-role="content">
+		
+	  <img src="image/map3.png" title="Home Image"height="250" width="350"  >
+			<!-- this code used for column grid widget
+	-->
+
+	  <div role="content" class="ui-content">
+
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+			<p>
+				The birds of paradise are a group of birds that are found in the tropical rainforests of south east Asia, 
+mainly in the jungles of Indonesia, Papua New Guinea and parts of eastern Australia.
+The majority of birds-of-paradise live in tropical forests, including rainforest, swamps and moss forest.
+Source: Firth, Clifford B.; Firth, Dawn W. (2009).
+			</p>
+			</div>
+			<div class="ui-block-b">
+			
+			<p>
+The centre of bird-of-paradise diversity is the large island of New Guinea; all but two genera are found in New Guinea. 
+The two that are not are the monotypic genera Lycocorax and Semioptera, both of which are endemic to the Maluku Islands, to the west of New Guinea.
+Source: Firth, Clifford B.; Firth, Dawn W. (2009).
+			</p>
+			</div>
+			
+		</div>
+
+	</div>
+
+		</div>
+	<!-- this code is footer nav bar section, data-prefetch="true", data-transition="slide" added
+	-->
+		<div data-role="footer">
+			<div data-role="navbar">
+				<ul>
+				<li><a href="#videoPage" data-transition="slide" data-prefetch="true" data-icon="camera" >VIEW</a></li>
+				<li><a href="#registerPage" data-transition="slide" data-prefetch="true" data-icon="mail" >REGISTER</a></li>
+				<li><a href="#contactPage" data-transition="slide" data-prefetch="true" data-icon="phone">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+		
 	</div>
 	
-</div>
-
 <!-- Page-4
 	This is Video page s of Bird of Paradise, title of the page is video of bird of paradise
 -->
@@ -167,7 +249,8 @@ Source: Firth, Clifford B.; Firth, Dawn W. (2009).
 		<h3>
 			Behavioural Video Bird of Paradise
 		</h3>
-	
+	<!-- this code used video html tag for video play
+	-->
 		<video width="320" height="340" controls>
 			<source src="image/video.mp4" type="video/mp4">
 			Your browser does not support the video tag.
@@ -229,6 +312,22 @@ Source: Dancing With The Birds | Official Trailer | Netflix
 	Combined with intense sexual selection, this has led to the stunning diversity of species we see today. 
 	Source: Bird of Paradise Project
   </p>
+  		<!-- this code used collaosible data-role for collasible widget
+	-->
+  <div data-role="collapsible">
+	<h3>Read more about the Island</h3>
+
+	<p>
+	 Bird of Paradise Island) is a small island off the northeastern coast of Tobago, 
+and part of the Republic of Trinidad and Tobago.
+The island supports dry forest. It is an important breeding site for seabirds such as red-billed tropicbird,
+Audubon's shearwater, brown booby, brown noddy, sooty and bridled terns.
+A few pairs of white-tailed tropicbirds are also nesting here.source: Anthony, Michael (2001). Historical Dictionary of Trinidad and Tobago.
+ Scarecrow Press, Inc. Lanham, Md., and London
+
+	</p>
+	
+</div>
 	</div>
 <!-- this code is footer nav bar section, data-prefetch="true", data-transition="slide"  added
 -->
@@ -267,12 +366,16 @@ Source: Dancing With The Birds | Official Trailer | Netflix
 	
 		<img src="image/birds.png" title="Home Image" >
 
-  <p>
-	
-	To understand bird–of–paradise evolution, biologists have organized closely related species into 15 groups each called a genus plural: genera. 
-	Some of the genera have several species that look pretty similar. Other genera contain just a single unusual species. Look inside each genus and see how taxonomy helps make sense of biological diversity. 
-	Source: Bird of Paradise Project
-  </p>
+		<!-- this code used listview data-role for  list widget
+	-->
+		<div role="main" class="ui-content">
+			<ul data-role="listview" data-inset="true">
+			<li><a href="#"><img src="taxo/great.png" class="ui-li-icon"> Greator Bird of Paradise</a></li>
+			<li><a href="#"><img src="taxo/wilson.png" class="ui-li-icon"> Wilson Bird of Paradise</a></li>
+			<li><a href="#"><img src="taxo/king.png" class="ui-li-icon">King Bird of Paradise </a></li>
+			<li><a href="#"><img src="taxo/blue.png" class="ui-li-icon"> Blue Bird of Paradise</a></li>
+			</ul>
+		</div>
 	</div>
 <!-- this code is footer nav bar section, data-prefetch="true", data-transition="slide" added
 -->
@@ -288,127 +391,198 @@ Source: Dancing With The Birds | Official Trailer | Netflix
 </div>
 
 
-
 <!-- Page-8
 	This is contact page of Bird of Paradise, title of the page is contact us
 -->
 <div data-role="page" id="contactPage" >
-<!-- this code is header nav bar section, data-prefetch="true", data-transition="slide" added
--->
-	<div data-role="header">
-		<h1>Contact Us:</h1>
-		<div data-role="navbar">
-		<ul>
-			<li><a href="#homePage" data-transition="slide" data-prefetch="true" data-icon="home">Home</a></li>
-			<li><a href="#aboutPage" data-transition="slide" data-prefetch="true" data-icon="info">ABOUT</a></li>
-			<li><a href="#mapPage"  data-transition="slide" data-prefetch="true" data-icon="location" >MAP</a></li>
-		</ul>		
-		</div>
-	</div>
-	
-	<div data-role="content">
-		
-	
-		<img src="image/contact.png" title="Home Image" >
-		<h3>
-			Contact Us for any inquiry:
-			
-		</h3>
-		<ul>
-			<li>email: gupta.gmail.com</li>
-			<li>Phone: 215-384-2548</li>
-			<li>Mailing Address:
-			2520 North Avenue
-			Maple Park IL 60146</li>
-		</ul>
-		<a href="https://www.facebook.com/cornellbirds">Follow us on FaceBook</a> 
-		<img src="image/face.png" title="facebook" width="50" height="50"  >
-		<br>
-		<a href="https://www.youtube.com/LabofOrnithology">Subscribe YouTube Channel</a> 
-		<img src="image/you.png" title="facebook" width="50" height="50" >
-
-	</div>
-<!-- this code is footer nav bar section, data-prefetch="true", data-transition="slide" added
--->
-	<div data-role="footer">
-		<div data-role="navbar">
+	<!-- this code is header nav bar section, data-prefetch="true", data-transition="slide" added
+	-->
+		<div data-role="header">
+			<h1>Contact Us:</h1>
+			<div data-role="navbar">
 			<ul>
-				<li><a href="#videoPage" data-transition="slide" data-prefetch="true" data-icon="camera" >VIEW</a></li>
-				<li><a href="#registerPage"data-transition="slide" data-prefetch="true" data-icon="mail" >REGISTER</a></li>
-				<li><a href="#" class="ui-btn-active"  data-icon="phone">CONTACT</a></li>
-			</ul>
+				<li><a href="#homePage" data-transition="slide" data-prefetch="true" data-icon="home">Home</a></li>
+				<li><a href="#aboutPage" data-transition="slide" data-prefetch="true" data-icon="info">ABOUT</a></li>
+				<li><a href="#mapPage"  data-transition="slide" data-prefetch="true" data-icon="location" >MAP</a></li>
+			</ul>		
+			</div>
 		</div>
+		
+		<div data-role="content">
+			
+		
+			<img src="image/flower.png" title="Home Image" >
+			<h3>
+				Contact Us for any inquiry:
+				
+			</h3>
+			<div role="main" class="ui-content">
+
+				<div data-role="collapsible-set">
+		
+					<div data-role="collapsible">
+						<h3>America</h3>
+						<p>
+							Vivek Gupta<br/>
+						101 North Ave<br/>
+						New Jersey, NJ<br/>
+						40185
+						</p>
+					</div>
+							<!-- this code used collapsible data-role for collasible widget
+	-->
+					<div data-role="collapsible">
+						<h3>Asia</h3>
+						<p>
+							Biru Gupta<br/>
+						410 Ram Street<br/>
+						Mumbai, india<br/>
+						</p>
+					</div>
+					
+					<div data-role="collapsible">
+						<h3>Europe</h3>		
+						<p>
+							V B Gupta<br/>
+						410 Harrison Street<br/>
+						London, UK<br/>
+						</p>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<a href="https://www.facebook.com/cornellbirds" class="fa fa-facebook"></a>
+			<a href="https://www.youtube.com/LabofOrnithology"  class="fa fa-youtube"></a>
+		</div>
+	<!-- this code is footer nav bar section, data-prefetch="true", data-transition="slide" added
+	-->
+		<div data-role="footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#videoPage" data-transition="slide" data-prefetch="true" data-icon="camera" >VIEW</a></li>
+					<li><a href="#registerPage"data-transition="slide" data-prefetch="true" data-icon="mail" >REGISTER</a></li>
+					<li><a href="#" class="ui-btn-active"  data-icon="phone">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+	
 	</div>
-
 </div>
-
 
 <!-- Page-7
 	This is register page of Bird of Paradise, title of this page is registration
 -->
 <div data-role="page" id="registerPage" >
-<!-- this code is header nav bar section, data-prefetch="true", data-transition="slide" added
--->
-	<div data-role="header">
-		<h1>Registration</h1>
-		<div data-role="navbar">
-		<ul>
-			<li><a href="#homePage" data-transition="slide" data-prefetch="true" data-icon="home">Home</a></li>
-			<li><a href="#aboutPage" data-transition="slide" data-prefetch="true" data-icon="info">ABOUT</a></li>
-			<li><a href="#mapPage" data-transition="slide" data-prefetch="true" data-icon="location" >MAP</a></li>
-		</ul>		
-		</div>
-	</div>
-	
-	<div data-role="content">
-		
-	
-		<img src="image/flower.png" title="Home Image" >
-		<h3>
-			Register for Guided Tour 
-		</h3>
-  <div role="main" class="ui-content">
-		<form>
-			<div class="ui-field-contain">
-				<label for="name">First & Last Name:</label>
-				<input id="title" type="text" placeholder="Your Name" />
-			</div>
-			<div>
-				<label for="date">Date of Booking:</label>
-				<input type="date" id="date" placeholder="yyyy-mm-dd" required>
-			</div>
-			<div class="ui-field-contain">
-				<label for="contact">Contact & email:</label>
-				<textarea id="note" placeholder="Contact Addres">
-				</textarea>
-			</div>
-			<div class="ui-grid-a">
-				
-				<div class="ui-block-b">
-					
-					<input id="btnAddNote" type="button" value="Submit" data-icon="check" />
-				</div>
-			</div>
-		</form>
-
-		<ul id="notesList" data-role="listview" data-inset="true"></ul>
-	</div>
-
-	</div>
-<!-- this code is footer nav bar section, data-prefetch="true", data-transition="slide" added
--->
-	<div data-role="footer">
-		<div data-role="navbar">
+	<!-- this code is header nav bar section, data-prefetch="true", data-transition="slide" added
+	-->
+		<div data-role="header">
+			<h1>Registration</h1>
+			<div data-role="navbar">
 			<ul>
-				<li><a href="#videoPage" data-transition="slide" data-prefetch="true" data-icon="camera" >VIEW</a></li>
-				<li><a href="#"class="ui-btn-active"  data-icon="mail" >REGISTER</a></li>
-				<li><a href="#contactPage" data-transition="slide" data-prefetch="true" data-icon="phone">CONTACT</a></li>
-			</ul>
+				<li><a href="#homePage" data-transition="slide" data-prefetch="true" data-icon="home">Home</a></li>
+				<li><a href="#aboutPage" data-transition="slide" data-prefetch="true" data-icon="info">ABOUT</a></li>
+				<li><a href="#mapPage" data-transition="slide" data-prefetch="true" data-icon="location" >MAP</a></li>
+			</ul>		
+			</div>
 		</div>
+		
+		<div data-role="content">
+			
+			<h3>
+				Register for Guided Tour of Bird of Paradise
+			</h3>
+
+	  <div dat-role="content" class="ui-content">
+		  <!-- this code used text, textarea, radio. checked and slider form widget
+	  -->
+
+			<form id="submit4R">
+				<div class="ui-field-contain">
+					<label for="name">First & Last Name:</label>
+					<input id="fName" type="text" placeholder="Your Name" />
+				</div>
+				
+				<div class="ui-field-contain">
+					<label for="contact">Contact & email:</label>
+					<textarea id="note" placeholder="Contact Addres">
+					</textarea>
+				</div>
+
+				<fieldset data-role="controlgroup">
+					<legend>Total No. of Person:</legend>
+					<input type="radio" name="favoritemovie"
+					id="favoritemovie1" value="Star Wars">
+					<label for="favoritemovie1">1-2</label>
+					<input type="radio" name="favoritemovie"
+					id="favoritemovie2" value="Vanilla Sky">
+					<label for="favoritemovie2">2-4</label>
+					<input type="radio" name="favoritemovie"
+					id="favoritemovie3" value="Inception">
+					<label for="favoritemovie3">4-6</label>
+					</fieldset>
+					
+					<fieldset data-role="controlgroup">
+					<legend>Type of Rooms Required:</legend>
+					<input type="checkbox" name="favoritecolor"
+					id="favoritecolor1" value="Green">
+					<label for="favoritecolor1">Dormitory</label>
+					<input type="checkbox" name="favoritecolor"
+					id="favoritecolor2" value="Red">
+					<label for="favoritecolor2">Single Bed</label>
+					<input type="checkbox" name="favoritecolor"
+					id="favoritecolor3" value="Yellow">
+					<label for="favoritecolor3">Double Bed</label>
+					</fieldset>
+
+					<div class="ui-field-contain">
+						<label for="favmovie">Meal Preference:</label>
+						<select name="favmovie" id="favmovie">
+						<option value="Star Wars">Vegeterian</option>
+						<option value="Revenge of the Sith">Non-Vegeterian</option>
+						<option value="Tron">No Preference</option>
+						<option value="Tron Legacy">Not Required</option>
+						</select>
+					</div>
+
+				<div class="ui-grid-a">
+					
+					<div class="ui-block-b">
+						
+						<input id="register" type="button" onclick="store()" value="Submit" data-icon="check" />
+					</div>
+				</div>
+			</form>
+			<div id="display"></div>
+		</div>
+	
+		</div>
+			<!--This javascript function use localStorage html5 function to store user first and last name
+			and display it after clicking submit button on registration page. -->
+		<script type="text/javascript">
+			  function store(){
+     			var f_Name= document.getElementById("fName");
+     			localStorage.setItem("name", f_Name.value);
+     			document.getElementById("display").innerHTML = localStorage.getItem("name") + ", We Will store your information";
+    			}
+			</script>
+			
+
+	<!-- this code is footer nav bar section, data-prefetch="true", data-transition="slide" added
+	-->
+		<div data-role="footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#videoPage" data-transition="slide" data-prefetch="true" data-icon="camera" >VIEW</a></li>
+					<li><a href="#"class="ui-btn-active"  data-icon="mail" >REGISTER</a></li>
+					<li><a href="#contactPage" data-transition="slide" data-prefetch="true" data-icon="phone">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+	
 	</div>
-
-</div>
-
-</body>
-</html>
+	
+	</body>
+	</html>
 
