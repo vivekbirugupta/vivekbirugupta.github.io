@@ -8,7 +8,7 @@ body, html {
   background-image: url("image/BoP.png");
 
   /* Full height */
-  height: 92%; 
+  height: 85%; 
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -21,7 +21,7 @@ body, html {
   background-image: url("image/map.png");
 
   /* Full height */
-  height: 92%; 
+  height: 80%; 
 
   /* Center and scale the image nicely */
   background-position: center;
